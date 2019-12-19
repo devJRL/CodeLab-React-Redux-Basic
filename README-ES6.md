@@ -1,9 +1,15 @@
 # ES6()
 
-- [실습페이지 | jsbin.com](http://jsbin.com/?js,output)
-- let: Braket({,})을 기준으로 유지되는 지역변수
-- const: 변화 불가능한 구조자료 생성
-- 삼항 조건 연산자
+[실습페이지 | jsbin.com](http://jsbin.com/?js,output)
+
+## var / let, const
+
+- var: Function(함수)단위로 유지되는 변수
+- let: Braket({,})으로 정의된 블록 기준으로 유지되는 변수
+- const: 선언과 함께 초기화된 이후 값이 변하지 않는 상수값에 적용
+
+## 삼항 조건 연산자
+
 - for 문
 
   ```javascript

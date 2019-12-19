@@ -39,3 +39,9 @@
   cd {my-project}
   yarn start
 ```
+
+5. 새로 받은 경우, node_modules 폴더는 제외된 상태로 가볍게 오므로 노드 의존 모듈 설치
+
+```bash
+  yarn install
+```

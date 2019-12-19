@@ -3,15 +3,17 @@ import TodoListTemplate from "./componets/TodoListTemplate";
 import Form from "./componets/Form";
 import TodoItemList from "./componets/TodoItemList";
 
+// 500개의 더미 리스트를 넣어서 성능 테스트
+const initialTodos = new Array(500)
+  .fill(0)
+  .map((item, idx) => ({ id: idx, text: `일정 ${idx}`, checked: true }));
+
 class App extends Component {
   id = 3; // 이미 0,1,2 가 존재하므로 3으로 설정
   state = {
     input: "",
-    todos: [
-      { id: 0, text: "리액트 소개", checked: false },
-      { id: 1, text: "리액트 구조", checked: true },
-      { id: 2, text: "리액트 사용", checked: false }
-    ]
+    todos: initialTodos
+    // todos: []
   };
 
   // 생성

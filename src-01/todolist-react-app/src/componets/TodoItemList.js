@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import TodoItem from "./TodoItem";
 
 class TodoItemList extends Component {
+  // 갱신이 없으면 그리지 않는 조건식 제공
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.todos !== nextProps.todos;
+  }
+
   render() {
     const { todos, onToggle, onRemove } = this.props;
     const todoList = todos.map(({ id, text, checked }) => (

@@ -86,9 +86,15 @@ VIEW에 해당하는 DOM(HTML)과 React가 관리하고 있는 가상 DOM(JSX)�
 
 ### 컴포넌트 반복 : map()
 
-### [실습] ToDo-List App
+### [실습][todo-list app](./src-01/todolist-react-app)
 
 - React Framework 성능 최적화 : 화면 렌더링
+
+### [리액트 성능테스트]
+
+- 퍼포먼스 녹화시작 : Chrome -> F12 -> Performance -> REC
+- 리액트 접속하기 : Chrome : http://localhost:3000?`?react_perf`
+- 퍼포먼스 녹화정지 : STOP -> See Result
 
 ---
 

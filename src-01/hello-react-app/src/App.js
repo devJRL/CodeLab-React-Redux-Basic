@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import HelloComponent from "./components/HelloComponent";
 import HelloCompoentFunction from "./components/HelloCompoentFunction";
+import HelloCompoentLoop from "./components/HelloCompoentLoop";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
       <React.Fragment>
         <HelloComponent name="JRL" age={30} />
         <HelloCompoentFunction name="함수형 컴포넌트" age={20} />
+        <HelloCompoentLoop />
       </React.Fragment>
     );
   }

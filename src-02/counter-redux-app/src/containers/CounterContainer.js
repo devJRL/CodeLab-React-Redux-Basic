@@ -1,8 +1,11 @@
-import * as actions from "../actions";
+// [Compoent] : Presentational Component
 import Counter from "../components/Counter";
-
+// [Actions] : Action Creator
+import * as actions from "../actions";
 // [Connect] : store(redux) <-connect-> components in container(react)
 import { connect } from "react-redux";
+// [Utils] : 랜덤 색상을 만드는 함수 가져오기
+import { getRandomColor } from "../utils";
 
 // store 안의 state 값을 props로 연결해줍니다.
 const mapStateToProps = state => ({
@@ -18,8 +21,8 @@ const mapDispatchToProps = dispatch => ({
   onIncrement: () => dispatch(actions.increment()),
   onDecrement: () => dispatch(actions.decrement()),
   onSetColor: () => {
-    const color = "black"; // 임시 getRandomColor()를 작성하여 변경할 예정
-    dispatch(actions.setColor(color));
+    const color = getRandomColor(); // Util 호출 : 랜덤 색상 전환
+    dispatch(actions.setColor(color)); // 색상 값을 Props로 전달
   }
 });
 

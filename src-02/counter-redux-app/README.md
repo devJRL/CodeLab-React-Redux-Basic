@@ -18,4 +18,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   ## USING NPM: npm start
 ```
 
-![sample_image](https://github.com/devJRL/CodeLab-React-Redux-Basic/tree/master/src-02/counter-redux-app/app_sample.png)
+![sample_image](https://github.com/devJRL/CodeLab-React-Redux-Basic/blob/master/src-02/counter-redux-app/app_sample.png?raw=true)

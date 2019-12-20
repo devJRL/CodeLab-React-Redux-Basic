@@ -7,13 +7,13 @@ const Counter = ({ number, color, onIncrement, onDecrement, onSetColor }) => {
   return (
     <div
       className="Counter"
+      style={{ backgroundColor: color }}
       onClick={onIncrement}
       onContextMenu={e => {
         e.preventDefault();
         onDecrement();
       }}
-      onDoubleClick={onSetColor}
-      style={{ backgroundColor: color }}
+      onMouseOver={onSetColor}
     >
       {number}
     </div>

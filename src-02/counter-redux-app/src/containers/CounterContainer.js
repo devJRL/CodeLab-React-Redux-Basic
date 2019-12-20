@@ -7,10 +7,11 @@ import { connect } from "react-redux";
 // [Utils] : 랜덤 색상을 만드는 함수 가져오기
 import { getRandomColor } from "../utils";
 
-// store 안의 state 값을 props로 연결해줍니다.
+// Reducer-root가 반환한 형태대로
+// * mapStateToProps : store.getState() 결과 값인 state 객체를 받아서 컴포넌트의 props로 연결하는 역할
 const mapStateToProps = state => ({
-  color: state.color,
-  number: state.number
+  number: state.numberData.number,
+  color: state.colorData.color
 });
 
 // [Dispatch]
@@ -31,6 +32,5 @@ const mapDispatchToProps = dispatch => ({
 // Counter 컴포넌트가 가진 데이터 레이어(state)를 Store(redux)에 전달하기 위해서
 // State/Dispatch를 props에 연결하는 컨테이너를 생성. 이 컨테이너를 통해 데이터를 store에 전달
 const CounterContainer = connect(mapStateToProps, mapDispatchToProps)(Counter);
-// * mapStateToProps : store.getState() 결과 값인 state 객체를 받아서 컴포넌트의 props로 연결하는 역할
 
 export default CounterContainer;

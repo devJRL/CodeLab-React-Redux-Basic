@@ -15,6 +15,10 @@ import { Provider } from "react-redux";
 // Store with Reducer
 const store = createStore(reducers);
 
+// IF YOU NEED REDUX DEV TOOLS, OPEN CHROME DEV TOOL WINDOW!!
+// 'Store (with Reducer)' for Redux Dev Tools
+// const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
 // Provider(react-redux) for Store(redux)
 ReactDOM.render(
   <Provider store={store}>

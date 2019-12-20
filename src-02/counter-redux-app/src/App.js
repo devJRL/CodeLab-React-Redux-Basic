@@ -1,11 +1,16 @@
 // ! rcc
 import React, { Component } from "react";
-import Counter from "./components/Counter";
+// [Container] : Component(state, props/react) ~ Store(redux) 연결을 가능하게하는 dipatch가 내장된 컨테이너
+import CounterContainer from "./containers/CounterContainer";
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Counter />
+        <CounterContainer />
+        <h4> Right-Click : Plus(+) </h4>
+        <h4> Left-Click : Minus(-) </h4>
+        <h4> Double-Click : Random color change </h4>
       </div>
     );
   }

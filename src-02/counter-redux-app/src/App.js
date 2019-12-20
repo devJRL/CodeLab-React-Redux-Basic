@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div>
         <CounterContainer />
+        <h4> MouseOver : Random color change </h4>
         <h4> Right-Click : Plus(+) </h4>
         <h4> Left-Click : Minus(-) </h4>
-        <h4> Double-Click : Random color change </h4>
       </div>
     );
   }

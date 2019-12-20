@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TodoListTemplate from "./componets/TodoListTemplate";
 import Form from "./componets/Form";
-import TodoItemList from "./componets/TodoItemList";
+import TodoItemList from "./components/TodoItemList";
 
 // 500개의 더미 리스트를 넣어서 성능 테스트
 const initialTodos = new Array(500)

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import TodoListTemplate from "./componets/TodoListTemplate";
-import Form from "./componets/Form";
+import TodoListTemplate from "./components/TodoListTemplate";
+import Form from "./components/Form";
 import TodoItemList from "./components/TodoItemList";
 
 // 500개의 더미 리스트를 넣어서 성능 테스트
-const initialTodos = new Array(500)
+const initialTodos = new Array(5)
   .fill(0)
-  .map((item, idx) => ({ id: idx, text: `일정 ${idx}`, checked: true }));
+  .map((item, idx) => ({ id: idx, text: `일정 ${idx}`, checked: idx % 3 === 0 ? true : false}));
 
 class App extends Component {
   id = 3; // 이미 0,1,2 가 존재하므로 3으로 설정

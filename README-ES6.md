@@ -70,6 +70,57 @@
   console.log(num); // [0, 1, 3, 5, 2, 4, 6, 10]
   ```
 
-- Assign
+- Destructuring Assignment
+
+  ```javascript
+  import { observable, action, runInAction } from 'mobx';
+  
+  const { store, form, loading, errors, entity } = this.props; 
+  ```
+
+- Object.assign() Function
+  
+  ```javascript
+  const obj = {a:1};
+  let copy = Object.assign({}, obj);
+  console.log(copy); // {a: 1}
+  
+  const obj1 = {a:1};
+  const obj2 = {b:2};
+  const obj3 = {c:3};
+  let newObj = Object.assign({}, obj1, obj2, obj3);
+  console.log(newObj); // {a: 1, b: 2, c: 3}
+  ```
+
+- Mandatory Parameter
+
+  ```javascript
+  // below ES5
+  function foo(bar) {
+  if(bar === undefined) {
+    throw new Error('Missing parameter!');
+  }
+    return bar;
+  }
+
+  // in ES6
+  let mandatory = () => {
+    throw new Error('Missing parameter!');
+  }
+  let foo = (bar = mandatory()) => {
+    return bar;
+  }
+  ```
 
 - Promise Object
+  
+  ```javascript
+  new Promise(function (resolve, reject) {
+  }).then(function (resolve) {
+    // handle value of resolve
+  }).catch(function (reject) {
+    // handle value of reject
+  }).finally(function(){
+    // handle after all
+  });
+  ```
